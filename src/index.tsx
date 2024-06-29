@@ -8,7 +8,7 @@ import { MantineProvider } from "@mantine/core";
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
-    <MantineProvider defaultColorScheme="auto">
+    <MantineProvider defaultColorScheme="light">
       <App />
     </MantineProvider>
   </React.StrictMode>

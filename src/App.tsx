@@ -113,35 +113,41 @@ const App: React.FC = () => {
   };
 
   const renderTable = (data: (Table1Row | Table2Row)[], headers: string[]) => (
-    <Table>
-      <thead>
-        <tr>
+    <Table
+      striped
+      highlightOnHover
+      withTableBorder
+      horizontalSpacing="md"
+      verticalSpacing="md"
+    >
+      <Table.Thead>
+        <Table.Tr>
           {headers.map((header, index) => (
-            <th key={index}>{header}</th>
+            <Table.Th key={index}>{header}</Table.Th>
           ))}
-        </tr>
-      </thead>
-      <tbody>
+        </Table.Tr>
+      </Table.Thead>
+      <Table.Tbody>
         {data.map((row, index) => (
-          <tr key={index}>
+          <Table.Tr key={index}>
             {Object.values(row).map((cell, cellIndex) => (
-              <td key={cellIndex}>{cell}</td>
+              <Table.Td key={cellIndex}>{cell}</Table.Td>
             ))}
-          </tr>
+          </Table.Tr>
         ))}
-      </tbody>
+      </Table.Tbody>
     </Table>
   );
 
   return (
     <div>
-      <h1>Table 1: Crop Production Analysis by Year</h1>
+      <h4>Table 1: Crop Production Analysis by Year</h4>
       {renderTable(table1, [
         "Year",
         "Crop with Maximum Production",
         "Crop with Minimum Production",
       ])}
-      <h1>Table 2: Average Yield and Cultivation Area of Crops (1950-2020)</h1>
+      <h4>Table 2: Average Yield and Cultivation Area of Crops (1950-2020)</h4>
       {renderTable(table2, [
         "Crop",
         "Average Yield (Kg/Ha)",
