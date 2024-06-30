@@ -1,1 +1,10 @@
+.app-dashboard {
+  max-width: 1280px;
+  margin-inline: auto;
+}
 
+.app-dashboard .container .table-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
