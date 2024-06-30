@@ -125,7 +125,7 @@ const App: React.FC = () => {
 
   // Function to render a table using the data and headers provided
   const renderTable = (data: (Table1Row | Table2Row)[], headers: string[]) => (
-    <Table.ScrollContainer minWidth={300} style={{ height: "660px" }}>
+    <Table.ScrollContainer minWidth={300} style={{ height: "665px" }}>
       <Table
         striped
         highlightOnHover
