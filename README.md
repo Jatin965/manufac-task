@@ -14,7 +14,7 @@ This project performs analytics on the Indian Agriculture dataset provided by th
 - Yarn (>=1.22.0)
 
 ## Screenshot
-![Alt text](./ManuFac_Analytics.jpeg?raw=true "screenshot")
+![Alt text](./ManuFac_Analytics.jpeg "ManuFac_Analytics")
 
 ## Installation
 
